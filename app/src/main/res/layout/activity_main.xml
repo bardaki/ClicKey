@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#c2c2c2"
+    tools:context="pp.com.clickey.MainActivity">
+
+    <Button
+        android:id="@+id/open_settings_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:padding="4dp"
+        android:background="@android:color/white"
+        android:text="Step 1: Enable ClickKey Keyboard" />
+
+    <ImageView
+        android:id="@+id/step_1_img"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/open_settings_btn"
+        android:src="@drawable/step1"/>
+
+    <Button
+        android:id="@+id/login_paypal_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/step_1_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/white"
+        android:text="Step 2: Login With PayPal" />
+
+    <Button
+        android:id="@+id/template_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_paypal_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/white"
+        android:text="Step 3: Create PayPal invoice template" />
+
+</RelativeLayout>

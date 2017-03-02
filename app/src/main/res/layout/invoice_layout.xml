@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/invoice_layout"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="#2498d4">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_keyboard_backspace_white_36dp"
+        android:background="#00000000"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/sent_to_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="Send invoice to:"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <pp.com.clickey.EditTextSelectable
+        android:id="@+id/send_to_txt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:hint="Type/Paste PP Id"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/color_main_red"
+        android:textColorHint="@android:color/black"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/email_done_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/send_to_txt"
+        android:background="#00000000"
+        android:src="@drawable/ic_done_white_36dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/amount_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@+id/send_to_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="$0"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/load_anim"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorColor="@android:color/white"
+        app:indicatorName="BallClipRotateMultipleIndicator"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/send_to_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/invoice_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/send_to_txt"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="6dp"
+        android:background="#00000000"
+        android:src="@drawable/ic_done_all_white_48dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
